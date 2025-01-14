@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#search {
+    width: 300px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s;
+    margin-right: 10px; /* 검색창과 드롭다운 간격 */
+}
+
+#search:focus {
+    border-color: #007bff; /* 포커스 시 강조 색상 */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#filter {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s;
+    cursor: pointer;
+}
+
+#filter:focus {
+    border-color: #007bff; /* 포커스 시 강조 색상 */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* 컨테이너 스타일 (정렬 및 간격 설정) */
+header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    background-color: #f4f4f4; /* 배경 색상 */
+    border-bottom: 1px solid #ddd; /* 구분선 */
+}
+
+/*
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background: #f4f4f4;
+}
+*/
+
+.container {
+    padding: 1em;
+}
+
+.art-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 20px;
+}
+
+.art-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.art-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    background-color: #f9f9f9; 
+}
+
+.preview {
+    position: relative;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.preview img {
+    max-width: 100%;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    box-shadow: none;
+    transition: none;
+}
+
+.preview img:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+
+.visit-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+.visit-link:hover {
+    background-color: #0056b3;
+}
+
+a {
+    display: block;
+    margin: 10px 0;
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.recommend-count {
+    font-size: 0.9rem;
+    color: #333;
+    margin-top: 8px;
+}
+
